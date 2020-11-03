@@ -1,0 +1,32 @@
+@charset "utf-8";
+
+/*일반게시판*/
+.bbs_list{position: relative; width: 100%; border-top:2px solid #222;}
+.bbs_list th{position: relative; padding: 17px 30px; font-weight: 600; color:#222; border-bottom:1px solid #ddd; background-color: #f9fafb; text-align: center;}
+.bbs_list th:before {content:""; display: block;  position: absolute; top: 50%; left: 0; width: 1px; height: 17px; -webkit-transform: translateY(-50%); -ms-transform: translateY(-50%); transform: translateY(-50%); background-color: #ddd;}
+.bbs_list td{padding: 17px 30px; border-bottom:1px solid #ddd; text-align: center; color:#666;}
+.bbs_list td[data-sort="subject"]{text-align:left; font-weight:600; color:#333;}
+.bbs_list td a{display: block; width: 100%; height: 100%;}
+.bbs_list td a *{display: inline-block; vertical-align: middle;}
+.bbs_list td .count{font-size: 12px; color:#d12f3a;}
+.bbs_list td .cat{display: inline-block; width: auto; height:28px; line-height:26px; padding: 0 10px; border: 1px solid transparent; letter-spacing: -0.025em; font-size: 12px; text-align: center; vertical-align: middle;}
+.bbs_list td .cat_notice{border-color:#1c9ad6; color: #1c9ad6;}
+.bbs_list td .cat_reply{margin-right:5px; background:#2d2d2d; border-color:#2d2d2d; color: #fff;}
+.bbs_list td .cat_yet{margin-right:5px; background: #eee; border-color:#eee; color: #666;}
+.bbs_list tr:hover td,
+.bbs_list tr:focus td,
+.bbs_list tr:active td{background-color: #fafafa;}
+
+/*노데이터*/
+.bbs_none_data{padding:20px 10px; border-bottom:1px solid #ddd; text-align:center; font-weight:400;}
+
+/*페이징*/
+.pagination{margin-top: 60px; font-size: 0; text-align: center;}
+.pagination .page_number{display: inline-block; min-width: 23px; position: relative; height: 32px; line-height: 30px; padding: 0 0px; margin: 0px 8px; font-weight: 400; font-size:1rem; color: #666; vertical-align: top; text-align: center; -webkit-transition: color 300ms; transition: color 300ms;}
+.pagination .page_number:after{content: ""; display: block; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; position: absolute; top: 0; left: 0;width: 100%; height: 100%; border-bottom: 2px solid transparent;}
+.pagination .page_number.current:after{border-bottom-color:#333;}
+.page_control_next, .page_control_prev{display: inline-block; margin: 0 8px;}
+.pagination .page_number.first,
+.pagination .page_number.prev,
+.pagination .page_number.next,
+.pagination .page_number.last{min-width: 32px; margin:0 3px; border: 1px solid #dedede;font-size: 0;}

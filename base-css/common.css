@@ -1,0 +1,40 @@
+@charset "utf-8";
+
+html, body {line-height:1.5; font-size: 15px; /*height: 100%;*/}
+body {overflow-x: hidden; font-family: 'NotoSansKR', sans-serif;}
+a{color: #555; text-decoration: none;}
+i{font-style:inherit;}
+[lang="en"] {font-family: 'Titillium', 'NotoSansKR', sans-serif;}
+
+/*input*/
+input[type=text],
+input[type=tel],
+input[type=email],
+input[type=password],
+input[type=url],
+textarea {-webkit-appearance: none;-moz-box-sizing: border-box;box-sizing: border-box;outline: none;font-family: sans-serif;}
+
+input[type=submit],
+input[type=button],
+button {font-family: 'NotoSansKR', sans-serif;}
+
+input[type=radio] {border-radius: 100%;}
+
+/*table*/
+table{border-collapse: collapse; border-spacing: 0;}
+table,th,td{border:none;}
+caption{overflow:hidden; line-height:0; text-indent:-2000em;}
+
+/* placeholder */
+::-webkit-input-placeholder {font-family: 'NotoSansKR', sans-serif;font-size: 16px;color: #666;}
+::-moz-placeholder {font-family: 'NotoSansKR', sans-serif;font-size: 16px;color: #666;}
+:-ms-input-placeholder {font-family: 'NotoSansKR', sans-serif;font-size: 16px;color: #666;}
+input:focus::-webkit-input-placeholder, textarea:focus::-webkit-input-placeholder {color: transparent;}
+input:focus::-moz-placeholder, textarea:focus::-moz-placeholder {color: transparent;}
+input:focus:-ms-input-placeholder, textarea:focus:-ms-input-placeholder {color: transparent;}
+
+/* list float clear */
+ol:after, ul:after {content: '';clear: both;display: table;}
+
+/*wrap*/
+.wrap {max-width: 1200px; margin: 0 auto;}

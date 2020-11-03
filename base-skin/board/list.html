@@ -1,0 +1,104 @@
+<? include("../../base-inc/top.html") ?>
+<? include("../../base-inc/header.html") ?>
+
+	<table class="bbs_list">
+		<caption>일반게시판 목록</caption>
+		<colgroup>
+			<col data-sort="number" style="width:7%">
+			<col data-sort="subject">
+			<col data-sort="write" style="width:15%">
+			<col data-sort="date" style="width:15%">
+		</colgroup>
+		<thead>
+			<tr>
+				<th scope="col" data-sort="number">No.</th>
+				<th scope="col" data-sort="subject">제목</th>
+				<th scope="col" data-sort="write">작성자</th>
+				<th scope="col" data-sort="date">작성일</th>
+			</tr>
+		</thead>
+		<tbody>
+			<!-- 공지 -->
+			<tr>
+				<td data-sort="number"><span class="cat cat_notice">공지</span></td>
+				<td data-sort="subject">
+					<a href="#">
+						<em class="new">새글</em>
+						<span>안녕하세요 공지사항 입니다 참고해주시길 바랍니다.</span>
+					</a>
+				</td>
+				<td data-sort="write">관리자</td>
+				<td data-sort="date">2018-04-29</td>
+			</tr>
+			<!-- 답변 -->
+			<tr>
+				<td data-sort="number">4</td>
+				<td data-sort="subject">
+					<a href="#">
+						<span class="cat cat_reply">답변</span>
+						<span>상시실기시험일자 일부변경알림</span>
+						<i lang="en" class="count">(12)</i>
+					</a>
+				</td>
+				<td data-sort="write">관리자</td>
+				<td data-sort="date">2018-04-29</td>
+			</tr>
+			<!-- 대기 -->
+			<tr>
+				<td data-sort="number">3</td>
+				<td data-sort="subject">
+					<a href="#">
+						<span class="cat cat_yet">대기</span>
+						<span>상시실기시험일자 일부변경알림</span>
+					</a>
+				</td>
+				<td data-sort="write">관리자</td>
+				<td data-sort="date">2018-04-29</td>
+			</tr>
+			<tr>
+				<td data-sort="number">2</td>
+				<td data-sort="subject">
+					<a href="#">
+						<span>상시실기시험일자 일부변경알림</span>
+					</a>
+				</td>
+				<td data-sort="write">관리자</td>
+				<td data-sort="date">2018-04-29</td>
+			</tr>
+			<tr>
+				<td data-sort="number">1</td>
+				<td data-sort="subject">
+					<a href="#">
+						<span>상시실기시험일자 일부변경알림</span>
+					</a>
+				</td>
+				<td data-sort="write">관리자</td>
+				<td data-sort="date">2018-04-29</td>
+			</tr>
+			<!-- 등록된 글없음 -->
+			<tr>
+				<td colspan="4" class="none">등록된 글이 없습니다.</td>
+			</tr>
+			<!-- //등록된 글없음 -->
+		</tbody>
+	</table>
+	<div class="bbs_none_data">
+		등록된 글이 없습니다.
+	</div>
+	
+	<div class="pagination">
+		<div class="page_control_prev">
+			<a href="#" class="page_number first"></a>
+			<a href="#" class="page_number prev"></a>
+		</div>
+		<span class="page_number current">1</span>
+		<a href="" class="page_number">2</a>
+		<a href="" class="page_number">3</a>
+		<div class="page_control_next">
+			<a href="#" class="page_number next"></a>
+			<a href="#" class="page_number last"></a>
+		</div>
+	</div>
+	
+
+<? include("../../base-inc/footer.html") ?>
