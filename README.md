@@ -1,2 +1,2 @@
-# base-skin
-게시판 기본 스킨
+# base-setting
+기본 세팅
