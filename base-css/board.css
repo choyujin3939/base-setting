@@ -30,3 +30,14 @@
 .pagination .page_number.prev,
 .pagination .page_number.next,
 .pagination .page_number.last{min-width: 32px; margin:0 3px; border: 1px solid #dedede;font-size: 0;}
+
+
+@media (max-width:1200px){
+	
+}
+@media (max-width:767px){
+	
+}
+@media (max-width:579px){
+	
+}
